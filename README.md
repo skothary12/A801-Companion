@@ -4,7 +4,7 @@ An interactive dashboard summarizing education reforms featured in Fernando Reim
 
 ## Features
 
-- **8 Country Profiles**: Brazil, Finland, Japan, Mexico, Peru, Poland, Portugal, and Russia (6 available)
+- **8 Country Profiles**: Brazil, Finland, Japan, Mexico, Peru, Poland, Portugal, and Russia (7 available)
 - **Comprehensive Reform Data**: Each country includes situation, indicators, challenges, political context, ministers, reform goals, strategies, and results
 - **Country Comparison**: Compare any two countries side-by-side
 - **AI-Powered "Advice to the Minister"**:
@@ -21,8 +21,9 @@ An interactive dashboard summarizing education reforms featured in Fernando Reim
 ✅ **Mexico** - Comprehensive curriculum reform
 ✅ **Peru** - A wholesale reform fueled by obsession with learning and equity
 ✅ **Poland** - Post-communist transformation and the reversal of evidence-based reform
+✅ **Portugal** - From last place to above OECD average through curriculum quality and assessment
 
-🔜 Portugal, Russia (Coming soon)
+🔜 Russia (Coming soon)
 
 ## Getting Started
 
@@ -98,11 +99,11 @@ A801 Automation/
 
 ## Adding More Countries
 
-To add Portugal or Russia:
+To add Russia:
 
 1. Open [src/App.jsx](src/App.jsx)
-2. Find the country object (e.g., `portugal: { id: 'portugal', ... }`)
-3. Add the chapter data following the same structure as Brazil, Finland, Japan, Mexico, Peru, or Poland
+2. Find the country object (e.g., `russia: { id: 'russia', ... }`)
+3. Add the chapter data following the same structure as Brazil, Finland, Japan, Mexico, Peru, Poland, or Portugal
 4. Change `available: false` to `available: true`
 
 ## AI Integration

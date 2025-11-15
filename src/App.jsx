@@ -1037,7 +1037,204 @@ Peru's reform demonstrates how a profound national crisis (PISA shock) combined 
 
 Poland's education reform story is both inspiring and cautionary: inspiring because it shows dramatic improvement is possible through evidence-based structural reform; cautionary because it demonstrates that strong evidence and international success do not guarantee political sustainability. The 2019 teachers' strike and NOoE movement represent ongoing struggle over whether Polish education will be governed by evidence or ideology.`
   },
-  portugal: { id: 'portugal', name: 'Portugal', flag: '🇵🇹', tagline: 'Raising standards and accountability', available: false, color: 'from-green-400 to-red-400' },
+  portugal: {
+    id: 'portugal',
+    name: 'Portugal',
+    flag: '🇵🇹',
+    tagline: 'From last place to above OECD average through curriculum quality and assessment',
+    authors: 'Nuno Crato',
+    available: true,
+    color: 'from-green-400 to-red-400',
+
+    situation: `Portugal arrived late to the twentieth century, struggling with illiteracy, poverty, isolation, and a very limited school system. Only in 1956 was compulsory schooling extended from 3 to 4 years (boys only; girls in 1960). By 1970, four years before the democratic revolution, 18% of the population was still illiterate, 66% of 15-year-olds hadn't completed any level of formal education, and only 0.9% had higher education degrees. Following the 1974 democratic revolution, European Community entrance, and arrival of structural funds, schooling expanded dramatically. By 2001, illiteracy dropped to 9%, the percentage without formal education fell to 9.2%, and those with higher education rose to 8.4%. These quantitative successes (democratization, expansion, increased compulsory schooling) apparently failed to bring students to reasonable literacy and general education levels. A bitter debate divided the country between educationalists defending the system and intellectuals accusing politicians of degrading education and lowering standards. Shocking news came with TIMSS 1995 showing Portuguese 4th graders at the bottom (only Iran and Iceland behind) and PISA 2000 showing Portugal below OECD average in all three areas. These results created a national crisis moment. From 2001-2015, despite many different ministers from different parties, a common thread emerged: increased attention to results. This culminated in the 2011-2015 period with explicit, intentional reforms focused on clear curriculum, increased school autonomy, regular student assessment, vocational paths, and flexibility. By PISA 2015, Portugal achieved above OECD average performance, and TIMSS showed 4th graders scoring higher in Mathematics than Finland and other high-performing countries.`,
+
+    indicators: [
+      { label: 'PISA 2000 Reading', value: 'Below OECD avg', icon: '📉' },
+      { label: 'PISA 2015 Reading', value: 'Above OECD avg', icon: '📈' },
+      { label: 'TIMSS 2015 Math', value: 'Higher than Finland', icon: '🏆' },
+      { label: '1970 Illiteracy', value: '18% → 9% (2001)', icon: '📚' },
+      { label: 'Dropout Rate 2000', value: '43.6% → 13.7% (2015)', icon: '🎓' },
+      { label: 'Compulsory School', value: '9th → 12th grade (2012)', icon: '🏫' },
+      { label: 'Low Achievers', value: 'Reduced in all subjects', icon: '✅' },
+      { label: 'Top Performers', value: 'Increased simultaneously', icon: '⭐' }
+    ],
+
+    challenges: [
+      'Historical legacy: arrived late to 20th century with massive illiteracy and poverty',
+      'TIMSS 1995: 4th grade Math near bottom (only Iran and Iceland below)',
+      'PISA 2000: Below OECD average in all three areas (Reading, Math, Science)',
+      'Polarized debate: educationalists vs. intellectuals on education quality',
+      'Quantitative success but qualitative failure: expanded access without quality',
+      '1970: 18% illiteracy, 66% of 15-year-olds with no formal education',
+      'Balance democratization with maintaining/raising standards',
+      'Highly centralized system resistant to change',
+      'Teacher unions opposing reforms (exams, autonomy, accountability)',
+      'Resistance to school rankings and data transparency',
+      'Financial crisis 2011: IMF/EC bailout with drastic spending cuts',
+      'Expanding compulsory schooling (9th to 12th grade) during budget crisis',
+      'Resistance to external evaluation and standardized testing',
+      'Teacher training institutions with lowered standards',
+      'Aging teacher workforce: 7.6:1 ratio (50+ to under 35) in elementary',
+      'Even worse in secondary: 14.6:1 ratio of older to younger teachers',
+      'Textbook quality issues before 2006 reforms',
+      'Exam difficulty fluctuations (50% swings) due to political tampering',
+      'Vocational system unequal and often serving political/business interests',
+      'Calculator abuse since first grade, avoidance of basic skills training',
+      'Poorly structured curriculum with vague learning outcomes',
+      'School autonomy strongly opposed by unions, principals, and parent associations'
+    ],
+
+    context: `Portugal's reform must be understood against its unique twentieth-century trajectory. The country "arrived late" to modernity, with compulsory schooling reaching only 4 years for boys in 1956 (girls in 1960), extending to 6 years in 1964, to 9th grade only in 1986, and to 12th grade in 2012. The 1974 democratic revolution, European Community entrance, and European structural funds catalyzed rapid educational expansion, but emphasized quantity over quality. The critical turning point came in 2001 when the Minister released school-level exam results for the first time after years of resistance and legal threats. This transparency revealed that socioeconomic status didn't determine everything—some wealthy-area schools underperformed while some disadvantaged-area schools excelled. PISA 2000 results (November 2001) showed Portugal below OECD average in all areas, triggering outcry. From 2001-2010, pragmatic reforms focused on results: 9th grade exams, mathematics action plan, national reading plan, first learning standards (2010-2011). The 2011 financial crisis paradoxically enabled deeper reforms. Portugal was "financially broke," requiring IMF/EC bailout with drastic cuts. Against this backdrop, the 2011-2015 government (PM Pedro Passos Coelho, Education Minister Nuno Crato as independent) expanded compulsory schooling while implementing quality-focused reforms. Despite budget and salary cuts, teachers and schools expanded enrollment, offered diverse curriculum, and improved quality. By PISA 2015, Portugal was internationally recognized: OECD noted Portugal and Macao as only systems that "moved everyone up" simultaneously—increasing top performers while reducing low achievers. European Commission identified Portugal and Sweden as only EU countries reducing low achievers in all three PISA domains simultaneously.`,
+
+    minister: `The reform period saw multiple ministers across parties demonstrating unusual cross-party continuity. 2001-2002: Minister released school exam results despite opposition, established task forces. 2002-2004: New government (rival party) maintained 9th grade exams, showing bipartisan support. 2004-2009: Minister instituted Mathematics Action Plan and supported National Reading Plan. 2009-2011: Minister introduced first learning standards. 2011-2015: Nuno Crato (chapter author) served as independent Minister of Education and Science under PM Pedro Passos Coelho during financial crisis, implementing comprehensive reforms despite IMF/EC constraints. Created IAVE (independent assessment institute) with governance preventing political tampering. Assembled expert groups: (i) expert teachers, (ii) university researchers, (iii) cognitive psychologists—contrasting with previous groups dominated by teacher associations. Key insight: Although ministers from different ideologies made different reforms, common thread was increased attention to results. This pragmatic focus, backed by experienced teachers, proved essential. Reforms opposed by teacher unions, some associations, education college professors. Support came from university professors, intellectuals (left and right), scientific societies (especially Portuguese Mathematical Society), parents, opinion makers demanding transparency and quality.`,
+
+    goals: [
+      'Raise achievement from below OECD average to above in international assessments',
+      'Provide high-quality education for all, especially disadvantaged students',
+      'Reduce dropout rates from 43.6% (2000) to below 15%',
+      'Establish clear, demanding, well-structured curriculum with defined learning goals',
+      'Prioritize basic knowledge: reading fluency, mathematics, sciences, history, geography',
+      'Create valid, reliable assessment instruments allowing year-to-year comparison',
+      'Establish independent evaluation preventing political tampering with exam difficulty',
+      'Promote equal opportunities through demanding education (not lowered standards)',
+      'Reduce low achievers while simultaneously increasing top performers',
+      'Improve textbook quality through independent evaluation and certification',
+      'Increase school autonomy while maintaining external accountability',
+      'Develop modern vocational system tied to industry and labor market needs',
+      'Expand compulsory schooling to 12th grade without quality decrease',
+      'Apply cognitive psychology research to curriculum and assessment design',
+      'Improve teacher training: regulate access, extend requirements, add subject content',
+      'Knowledge comes first: substantive knowledge as base for skills and competencies'
+    ],
+
+    strategies: [
+      '2001-2010 Pragmatic Reforms:',
+      'Released school-level exam results publicly (2001) despite resistance',
+      'Established 9th grade exams for Math and Portuguese (first 2004/2005)',
+      'Created Mathematics Action Plan for elementary and middle school',
+      'Supported National Reading Plan (non-curricular, library-based)',
+      'Introduced first learning standards (2010-2011)',
+      'Maintained cross-party continuity on core reforms',
+      '',
+      '2011-2015 Comprehensive Reforms:',
+      'Curriculum: Created demanding, well-structured curriculum',
+      'Expert groups: teachers + university researchers + psychologists',
+      'New standards ("metas curriculares") clarifying basic topics and attainment levels',
+      'Prioritized Math and Reading with increased elementary time',
+      'Organized topics in structured, progressive, scaffolded layers',
+      'Made standards clear to all: teachers, parents, textbook authors, exam designers',
+      'Incremental changes in same direction vs. complete overhaul',
+      '',
+      'Assessment: Created independent, reliable evaluation (IAVE 2013)',
+      'Independent General Council preventing ministerial interference',
+      'Designed tests with validity, reliability for year-to-year comparison',
+      'Cited cognitive psychology: evaluation reinforces knowledge retrieval',
+      'Ended exam difficulty fluctuations (previous 50% swings)',
+      '',
+      'Textbook Quality: Built on 2006 independent certification law',
+      'Aligned textbooks with standards (2012, reorganized 2014)',
+      'Systematic evaluation, correction, certification procedure',
+      '',
+      'School Success: Student-study help, temporary grouping, cross-grade support',
+      '',
+      'School Autonomy: Increased teacher credits based on improvement',
+      'Credits for raising results, reducing retention/dropout',
+      'Penalized grade inflation (internal > external)',
+      'Freedom in processes, external evaluation of outcomes',
+      '',
+      'Vocational: Two streams (regular technical + struggling students)',
+      'Industry partnership: ~5,000 firms year 1, ~12,000 year 2',
+      '',
+      'Teacher Training: Required math test for college entry',
+      'Extended masters to 4 semesters with more subject-matter',
+      'National screening exam for prospective teachers',
+      '',
+      'Applied cognitive psychology: retrieval, interleaving, structured scaffolding'
+    ],
+
+    results: `**PISA Transformation:**
+• PISA 2000: Below OECD average in all three areas
+• Reading 2000: Only 4 countries lower (Russia, Latvia, Mexico, Brazil)
+• Mathematics 2000: Only 4 lower (Greece, Luxembourg, Mexico, Brazil)
+• Science 2000: Only 3 lower (Luxembourg, Mexico, Brazil)
+• PISA 2009: Important improvement in all areas
+• PISA 2015: Above OECD average - "quantum leap"
+• Portugal became international model: "example to follow"
+
+**TIMSS Results:**
+• TIMSS 1995: 4th grade Math at bottom (only Iran, Iceland below)
+• TIMSS 2015: 4th graders scored higher than Finland and other high-performers
+
+**OECD Recognition - "Moving Everyone Up":**
+• OECD: "Macao and Portugal able to 'move everyone up' in science, math, reading by increasing top performers while reducing students not achieving baseline"
+• "Education systems can nurture top performers and assist struggling students simultaneously"
+• Section titled: "Countries do not have to choose between excellence and reducing underperformance"
+
+**European Union Achievement:**
+• EU target 2020: reduce PISA low achievers to 15%
+• Most EU countries NOT approaching target; averages worsening
+• **Only two EU countries reduced low achievers in all three domains: Sweden and Portugal**
+• European Commission recognition of unique achievement
+
+**Dropout Rate Transformation:**
+• 2000: Early leavers 43.6%
+• 2010: 28.3%
+• 2015: 13.7%
+• Decrease of 14.6 percentage points in 5 years (2010-2015)
+• Almost 3 percentage points per year reduction
+• Dropout decrease paralleled youth unemployment decrease after 2012
+• Achieved while expanding compulsory schooling to 12th grade
+
+**Equity and Quality:**
+• Raised bottom performers while increasing top performers
+• Proved demanding education helps disadvantaged students
+• Schools in disadvantaged areas can excel; wealthy-area schools can underperform
+• SES not insurmountable obstacle
+• "A challenging education is the only instrument for poor people to progress"
+
+**System Alignment:**
+• Clear curriculum → textbooks → teaching → assessment alignment achieved
+• Teachers understood student attainment goals
+• Parents able to help and track progress
+• Exam designers knew what to test
+• Incremental same-direction changes more effective than overhaul
+
+**Assessment Quality:**
+• IAVE independence prevented political tampering
+• Ended 50% exam difficulty fluctuations
+• Valid, reliable year-to-year comparison
+• Regulatory role promoting equity across regions
+
+**Financial Context:**
+• Dramatic improvements despite IMF/EC bailout
+• Expanded compulsory schooling during budget cuts
+• Teachers answered call despite salary cuts
+• Budget constraints don't prevent quality improvement
+
+**Teacher Screening Results:**
+• 34.1% failed general test (reading, writing, logic)
+• Subject failures: 42.3% Biology/Geology, 63.2% Physics/Chemistry, 60.4% Portuguese, 41.6% Elementary Math
+• Revealed urgent teacher preparation needs
+• Unfortunately abolished by next government under pressure
+
+**Vocational Success:**
+• Industry partnership: 12,000 firms by year 2
+• Businesses contributed personnel, tools, machinery, transportation, meals
+• Aligned with labor market needs
+• Two-stream division unfortunately abolished 2016
+
+**Success Factors:**
+• Cross-party continuity on core principles
+• Evidence-based approach (TIMSS, PISA, cognitive psychology)
+• Experienced teacher foundation despite adversity
+• Comprehensive, coherent strategy with alignment
+• Focus on quality AND equity simultaneously
+• Independence and transparency (IAVE, public results)
+• Cognitive science application
+• Industry partnership in vocational training
+
+Portugal's transformation from PISA 2000 (below average, near bottom) to PISA 2015 (above OECD average, model for others) demonstrates dramatic improvement through evidence-based policy, clear curriculum, reliable assessment, teacher partnership, focus on excellence and equity, and sustained attention to quality. Proved demanding education promotes rather than harms disadvantaged students, and political will with professional commitment can overcome severe financial constraints.`
+  },
   russia: { id: 'russia', name: 'Russia', flag: '🇷🇺', tagline: 'Modernizing the system', available: false, color: 'from-blue-400 to-red-400' }
 };
 
