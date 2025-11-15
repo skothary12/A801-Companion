@@ -810,7 +810,233 @@ Equity Focus:
 
 Peru's reform demonstrates how a profound national crisis (PISA shock) combined with political courage to "own the problem," comprehensive four-pillar strategy, teacher partnership approach, and obsessive focus on both learning and equity can produce dramatic improvements in a large, complex, highly unequal system within 3-4 years. The magic formula: evidence + political will + treating teachers as partners + equity obsession + demonstrating the possible.`
   },
-  poland: { id: 'poland', name: 'Poland', flag: '🇵🇱', tagline: 'Post-communist transformation', available: false, color: 'from-red-400 to-white' },
+  poland: {
+    id: 'poland',
+    name: 'Poland',
+    flag: '🇵🇱',
+    tagline: 'Post-communist transformation and the reversal of evidence-based reform',
+    authors: 'Jerzy Wiśniewski & Marta Zahorska',
+    available: true,
+    color: 'from-red-400 to-white',
+
+    situation: `Poland underwent a dramatic post-communist transformation beginning in 1989 with the Solidarity movement and Round Table negotiations that ended communist rule. Ten years after this political breakthrough, Poland launched an ambitious education reform in 1999 that fundamentally restructured the school system. The reform reduced primary school from 8 to 6 years, created a new 3-year lower secondary school (gimnazjum), and extended general education by 1 year before students were tracked into vocational or general tracks. This postponement of tracking was designed to provide more equal opportunities and better prepare students for a knowledge economy. The reform was implemented rapidly - designed in 1998, legislated in 1999, and implemented September 1999. Initial years were marked by significant anxiety among teachers and local authorities about capacity to implement the changes. However, the reform produced remarkable results: Poland's PISA scores improved dramatically from 2000 to 2012 (Reading: 479→518, Math: 490→518, Science: 498→526), making Poland one of the top-performing education systems in the world. Despite this evidence-based success, the reform became politically contested. In 2015, a new government was elected on a platform of nostalgia, promising to restore the pre-1999 system and eliminate lower secondary schools. This led to a 2017 "counter-reform" that reversed the successful structural changes despite all evidence showing they worked. The reversal created chaos in schools, culminated in a massive 2019 teachers' strike with 80% school participation, and vindicated the original reform when PISA 2018 results (collected before reversal implementation) showed continued improvement.`,
+
+    indicators: [
+      { label: 'PISA 2000 Reading', value: '479 → 518 (2012)', icon: '📖' },
+      { label: 'PISA Math', value: '490 → 518 (2012)', icon: '📊' },
+      { label: 'PISA Science', value: '498 → 526 (2012)', icon: '🔬' },
+      { label: 'Reform Launch', value: '1999', icon: '🚀' },
+      { label: 'PISA 2018 Reading', value: '512', icon: '📚' },
+      { label: 'Lower Secondary', value: 'Created 1999, Eliminated 2017', icon: '🏫' },
+      { label: '2019 Strike', value: '80% schools', icon: '✊' },
+      { label: 'Political Shift', value: '2015 election', icon: '🗳️' }
+    ],
+
+    challenges: [
+      'Implementing rapid structural reform in 1999 with limited preparation time (designed 1998, implemented Sept 1999)',
+      'Teacher anxiety about capacity to teach in new lower secondary schools',
+      'Local authority concerns about building/adapting facilities for new school structure',
+      'Political contestation: reform became symbol in broader political conflicts',
+      'Nostalgia-based opposition: calls to return to pre-1999 "better times" despite evidence',
+      'Evidence resistance: 2015 opposition dismissed PISA results and objective data',
+      '2017 counter-reform chaos: curricula and textbooks written in haste',
+      'Teacher professional crisis: elimination of schools where they built careers',
+      'Massive 2019 teachers\' strike: 80% of schools participated, over 500,000 teachers',
+      'Low teacher salaries despite reform success',
+      'Poor working conditions in schools',
+      'Citizens\' movement organized 150+ grassroots debates (NOoE) during strike',
+      'Political reversal of evidence-based policy',
+      'Curriculum overload in 2017 counter-reform',
+      'Hasty implementation of counter-reform mirroring 1999 rushed implementation',
+      'Loss of institutional memory and successful practices',
+      'Ideological opposition to comprehensive schools',
+      'Urban-rural divide in educational opportunities persisting',
+      'Reconciling political cycles with long-term educational improvement',
+      'Building sustainable consensus across political transitions'
+    ],
+
+    context: `Poland's reform must be understood in the context of the 1989 breakthrough when the Solidarity movement negotiated the Round Table agreement ending communist rule. This democratic transition created space for fundamental reforms across all sectors. The 1999 education reform came exactly 10 years after this political transformation, during a period when Poland was preparing for EU accession and needed to modernize all institutions. The reform was designed and implemented by a center-right government but enjoyed broad initial support. The political context shifted dramatically in 2015 when the Law and Justice party (PiS) won elections on a platform mixing nationalism, social conservatism, and nostalgia for pre-transition Poland. This government viewed the 1999 reform as a symbol of the post-1989 order they opposed. Despite overwhelming evidence of the reform's success (PISA improvements, OECD praise, international recognition), the new government prioritized ideological goals over evidence-based policy. The 2017 counter-reform was rushed through despite protests from educators, experts, and civil society. The 2019 teachers' strike became one of the largest labor actions in post-communist Poland, with teachers protesting not only low pay and poor conditions but also the destruction of successful educational structures. The strike was accompanied by a grassroots citizens' movement (Narada Obywatelska o Edukacji - NOoE) that organized over 150 debates across Poland about education's future. Ironically, PISA 2018 results released during this period vindicated the original reform, showing that the eliminated lower secondary schools had continued to produce strong results.`,
+
+    minister: `The 1999 reform was designed and implemented by Minister of National Education Mirosław Handke under Prime Minister Jerzy Buzek's center-right government. The reform enjoyed support from education experts including Jerzy Wiśniewski (chapter co-author and education policy expert). The 2017 counter-reform was led by Minister of National Education Anna Zalewska under Prime Minister Beata Szydło's Law and Justice government. Key actors in resistance included teacher unions (which had mixed positions - some supported original reform, others opposed both reforms), education experts who publicly opposed the reversal, civil society organizations, and the NOoE (Citizens' Debate on Education) grassroots movement led by educators, parents, and concerned citizens. International organizations including OECD and education researchers worldwide criticized the evidence-free reversal. Local authorities (gminas and powiats) responsible for managing schools faced implementation chaos in both 1999 and 2017, though 1999 challenges were met with capacity-building while 2017 created demoralization.`,
+
+    goals: [
+      'Modernize education structure to prepare students for knowledge economy (1999 reform)',
+      'Postpone tracking from age 14 to age 16 to provide more equal opportunities',
+      'Extend general education by one year before vocational/academic split',
+      'Create comprehensive lower secondary schools (gimnazjum) covering grades 7-9',
+      'Reduce primary school from 8 years to 6 years to align with European norms',
+      'Improve student learning outcomes and international competitiveness',
+      'Increase equity by reducing impact of family background on educational outcomes',
+      'Align Polish education system with EU standards for accession',
+      'Build teacher capacity for new pedagogical approaches',
+      'Create external examination system to ensure quality standards',
+      'Establish curriculum framework emphasizing critical thinking and competencies',
+      '2017 counter-reform goals: Restore pre-1999 structure (8-year primary)',
+      'Eliminate lower secondary schools despite evidence of success',
+      'Return to earlier tracking at age 14',
+      'Fulfill electoral promise to nostalgic voters'
+    ],
+
+    strategies: [
+      '1999 Reform Implementation Strategies:',
+      'Rapid legislative process: designed 1998, passed 1999, implemented September 1999',
+      'Structural reorganization: 6-year primary + 3-year lower secondary + secondary',
+      'Created new school type (gimnazjum) requiring building/adapting facilities',
+      'Teacher retraining programs for educators moving to new lower secondary level',
+      'Developed new curricula for 3-year lower secondary schools',
+      'Established external examination after grade 6 and grade 9',
+      'Local authority coordination: gminas managed primary, powiats managed lower secondary',
+      'International benchmarking and expert consultation',
+      'Phased implementation beginning with youngest cohorts',
+      '',
+      '2017 Counter-Reform Implementation Strategies:',
+      'Legislative reversal: passed 2016/17, implemented starting 2017/18',
+      'Rapid elimination of lower secondary schools over 2-3 years',
+      'Return to 8-year primary school structure',
+      'Hasty development of new curricula and textbooks',
+      'Curriculum overload: trying to cover more content in less time',
+      'Limited teacher consultation or professional development',
+      'Top-down implementation despite expert opposition',
+      'Ideological framing: presented as restoring "traditional Polish values"',
+      'Dismissal of evidence from PISA and international assessments',
+      '',
+      'Resistance Strategies:',
+      'NOoE grassroots movement organized 150+ public debates',
+      '2019 teachers\' strike: 80% of schools participated',
+      'Expert testimony and public letters opposing reversal',
+      'International education community criticism',
+      'Documentation of implementation chaos and negative impacts'
+    ],
+
+    results: `**1999 Reform Results (2000-2015):**
+
+**Dramatic PISA Improvements:**
+• Reading: 479 (2000) → 518 (2012) - 39 point gain, equivalent to one full year of learning
+• Mathematics: 490 (2000) → 518 (2012) - 28 point gain
+• Science: 498 (2000) → 526 (2012) - 28 point gain
+• Poland moved from below OECD average to significantly above average in all subjects
+• PISA 2012: Poland ranked 14th in reading, 14th in mathematics, 9th in science among all countries
+• Became one of highest-performing education systems in Europe
+
+**Equity Improvements:**
+• Reduced impact of socioeconomic background on student performance
+• Variance between schools decreased (more equal school quality)
+• Rural-urban gap narrowed though not eliminated
+• Students from disadvantaged backgrounds showed particular gains
+• Lower secondary comprehensive schools reduced early stratification effects
+
+**International Recognition:**
+• OECD highlighted Poland as major success story in multiple reports
+• Studied internationally as model of successful structural reform
+• Andreas Schleicher (OECD PISA director) praised reform in international forums
+• Academic publications documented reform as evidence-based policy success
+
+**System-Level Changes:**
+• External examinations established quality standards
+• Teacher professionalization increased in lower secondary level
+• Curriculum modernization emphasized competencies over rote learning
+• School infrastructure improved to accommodate new structures
+• Three-tier system (primary-lower secondary-upper secondary) became normalized
+
+---
+
+**2017 Counter-Reform Results (2017-2019):**
+
+**Implementation Chaos:**
+• Curricula written in extreme haste without adequate expert consultation
+• Textbooks rushed to production, arriving late or incomplete
+• Curriculum overload: attempting to cover 8 years of content previously taught over 9 years
+• Schools forced to reorganize physical spaces and grade configurations
+• Teachers uncertain about grade assignments and subject responsibilities
+• Some schools combined grades due to space/staffing constraints
+
+**Professional Demoralization:**
+• Teachers who spent careers in lower secondary schools faced elimination of their workplaces
+• Hasty changes undermined teacher professionalism and autonomy
+• Expertise in teaching early adolescents (grades 7-9) lost or dispersed
+• Contributing factor to massive 2019 strike
+
+**2019 Teachers' Strike - One of Largest Labor Actions in Post-Communist Poland:**
+• Over 80% of schools participated
+• Estimated 500,000+ teachers involved
+• Duration: Several weeks during April 2019
+• Demands: Higher salaries, better working conditions, AND opposition to counter-reform chaos
+• Student support: Many students joined protests or expressed solidarity
+• Timing: Occurred during national exams, creating additional pressure
+• Government largely unmoved: Strike ended without major concessions
+
+**NOoE (Narada Obywatelska o Edukacji) - Citizens' Debate on Education:**
+• Grassroots movement emerged during 2019 strike
+• Organized 150+ public debates across Poland
+• Brought together teachers, parents, students, education experts, concerned citizens
+• Debated future of Polish education outside government structures
+• Created alternative vision emphasizing evidence-based policy
+• Documented chaos and failures of counter-reform
+• Demonstrated civil society capacity to organize around education issues
+
+**PISA 2018 Results - Vindication of Original Reform:**
+• Results released during counter-reform implementation (data collected 2018 before full implementation)
+• Reading: 512 (slight decrease from 2012 peak of 518, but still strong)
+• Mathematics: 516 (maintained 2012 level of 518)
+• Science: 511 (slight decrease from 2015 peak)
+• Poland remained significantly above OECD average in all subjects
+• Results showed students educated in the "eliminated" lower secondary schools continued performing well
+• Provided evidence that counter-reform eliminated successful structures
+• International observers noted irony: government dismantled system shown to work
+
+---
+
+**Long-Term Implications:**
+
+**Lessons About Evidence-Based Policy:**
+• Demonstrated that political ideology can override strong evidence
+• Showed fragility of education reforms across political transitions
+• Illustrated challenge of maintaining successful policies when they become political symbols
+• Raised questions about how to insulate evidence-based reforms from political cycles
+
+**Impact on Teacher Profession:**
+• Dual shocks of rushed implementation (1999 and 2017) created recurring anxiety
+• 2019 strike largest teacher mobilization in post-communist period
+• Teacher salaries remained low despite system performance improvements
+• Professional demoralization from policy instability
+
+**Civil Society Response:**
+• NOoE demonstrated capacity for grassroots education organizing
+• Citizens increasingly aware that education policy matters and can be contested
+• Created infrastructure for ongoing civic engagement in education
+• Alternative to both government policy and traditional union structures
+
+**Structural Legacy:**
+• As of chapter writing (2019/2020), counter-reform proceeding despite opposition
+• Lower secondary schools being eliminated despite evidence they worked
+• Return to 8-year primary + secondary structure
+• Unclear whether future government might reverse the reversal
+• Loss of institutional knowledge and successful practices
+
+**International Significance:**
+• Poland's case study of both successful reform (1999) and its reversal (2017) unique in education policy
+• Demonstrates that PISA improvements can be achieved through structural reform
+• Also demonstrates that evidence alone insufficient to sustain reforms politically
+• Cautionary tale about political discontinuity in education policy
+
+**Success Factors (1999 Reform):**
+• Clear structural design postponing tracking
+• Rapid implementation that became "fait accompli"
+• Strong PISA results providing objective evidence
+• International support and recognition
+• Alignment with EU accession modernization agenda
+• Initial cross-party consensus (though later eroded)
+
+**Failure Factors (Unable to Sustain Reform):**
+• Reform became symbol in broader political conflicts (post-1989 order vs. nostalgia)
+• Insufficient attention to building permanent cross-party consensus
+• Teacher salary and working conditions not adequately addressed despite system success
+• Evidence-based arguments unable to overcome ideological opposition
+• Underestimated power of nostalgia in political messaging
+• Failed to make reform benefits visible to broader public beyond test scores
+
+Poland's education reform story is both inspiring and cautionary: inspiring because it shows dramatic improvement is possible through evidence-based structural reform; cautionary because it demonstrates that strong evidence and international success do not guarantee political sustainability. The 2019 teachers' strike and NOoE movement represent ongoing struggle over whether Polish education will be governed by evidence or ideology.`
+  },
   portugal: { id: 'portugal', name: 'Portugal', flag: '🇵🇹', tagline: 'Raising standards and accountability', available: false, color: 'from-green-400 to-red-400' },
   russia: { id: 'russia', name: 'Russia', flag: '🇷🇺', tagline: 'Modernizing the system', available: false, color: 'from-blue-400 to-red-400' }
 };
