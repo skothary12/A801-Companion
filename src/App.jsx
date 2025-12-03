@@ -9,6 +9,7 @@ import mexicoImg from './assets/images/Mexico.jpg';
 import peruImg from './assets/images/Peru.jpg';
 import polandImg from './assets/images/Poland.jpg';
 import portugalImg from './assets/images/Portugal.jpg';
+import russiaImg from './assets/images/Russia.png';
 
 const reformData = {
   brazil: {
@@ -1259,6 +1260,7 @@ Portugal's transformation from PISA 2000 (below average, near bottom) to PISA 20
     authors: 'Isak Froumin and Igor Remorenko',
     available: true,
     color: 'from-blue-400 to-red-400',
+    image: russiaImg,
     situation: `Russia transformed from the Soviet belief in having the "best-in-the-world" school system to a modern, globally competitive education system over a quarter century (1991-2018). The journey involved four major stages: (1) 1991 - disappearance of Soviet control and experimentation period; (2) 2000 - establishment of institutional mechanisms for reform; (3) 2012 - focus on global competitiveness and 21st-century skills; (4) 2016 - conservative turn questioning competency-based approaches.
 
 The Soviet legacy included forced equalization, communist ideological education, but also innovative curriculum development in the 1920s (influenced by Dewey, Vygotsky) and activity-based approaches in the 1960s. The late 1980s-1990s saw an innovation movement that encouraged experimentation, though this led to fragmentation.
@@ -1573,16 +1575,16 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
 
   if (currentView === 'dashboard') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-8">
+      <div className="min-h-screen bg-black p-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
               Audacious Education Purposes Study Companion
             </h1>
-            <p className="text-xl text-gray-600 mb-2">
+            <p className="text-xl text-gray-300 mb-2">
               How Governments Transform the Goals of Education Systems
             </p>
-            <p className="text-lg text-gray-500">Fernando Reimers (2020)</p>
+            <p className="text-lg text-gray-400">Fernando Reimers (2020)</p>
           </div>
 
           {/* Compare Button */}
@@ -1677,21 +1679,23 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
                   } : {}}
                 >
                   {/* Overlay for better text readability */}
-                  <div className={`absolute inset-0 ${country.image ? 'bg-black bg-opacity-40' : `bg-gradient-to-br ${country.color}`}`}></div>
+                  <div className={`absolute inset-0 ${country.image ? 'bg-black bg-opacity-50' : `bg-gradient-to-br ${country.color}`}`}></div>
 
                   {/* Content */}
                   <div className="relative z-10">
-                    <div className="text-7xl mb-4 transform group-hover:scale-110 transition-transform drop-shadow-lg">
+                    <div className="text-7xl mb-4 transform group-hover:scale-110 transition-transform drop-shadow-2xl">
                       {country.flag}
                     </div>
-                    <h2 className={`text-2xl font-bold mb-2 ${country.image ? 'text-white drop-shadow-lg' : 'text-gray-900'}`}>
-                      {country.name}
-                    </h2>
-                    <p className={`text-sm italic px-2 ${country.image ? 'text-white drop-shadow-md' : 'text-gray-700'}`}>
-                      {country.tagline}
-                    </p>
+                    <div className={`${country.image ? 'bg-black bg-opacity-60 backdrop-blur-sm' : ''} rounded-lg px-4 py-3`}>
+                      <h2 className={`text-2xl font-bold mb-2 ${country.image ? 'text-white' : 'text-gray-900'}`}>
+                        {country.name}
+                      </h2>
+                      <p className={`text-sm italic ${country.image ? 'text-gray-100' : 'text-gray-700'}`}>
+                        {country.tagline}
+                      </p>
+                    </div>
                     {!country.available && (
-                      <div className="mt-4 bg-gray-800 bg-opacity-50 text-white px-4 py-1 rounded-full text-xs">
+                      <div className="mt-4 bg-gray-800 bg-opacity-70 backdrop-blur-sm text-white px-4 py-1 rounded-full text-xs">
                         Coming Soon
                       </div>
                     )}
@@ -1927,27 +1931,40 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
 
   if (currentView === 'country') {
     return (
-      <div className="min-h-screen bg-gray-50">
-        {/* Header */}
-        <div className={`bg-gradient-to-r ${selectedCountry.color} shadow-lg`}>
-          <div className="max-w-5xl mx-auto px-8 py-6">
-            <button
-              onClick={() => setCurrentView('dashboard')}
-              className="flex items-center gap-2 text-gray-800 hover:text-gray-900 mb-4 transition"
-            >
-              <Home size={20} />
-              <span>Back to Dashboard</span>
-            </button>
-            <div className="flex items-center gap-6">
-              <span className="text-8xl">{selectedCountry.flag}</span>
-              <div>
-                <h1 className="text-4xl font-bold text-gray-900">{selectedCountry.name}</h1>
-                <p className="text-xl text-gray-800 italic mt-2">{selectedCountry.tagline}</p>
-                <p className="text-sm text-gray-700 mt-1">Authors: {selectedCountry.authors}</p>
+      <div
+        className="min-h-screen relative"
+        style={selectedCountry.image ? {
+          backgroundImage: `url(${selectedCountry.image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        } : {}}
+      >
+        {/* Background overlay */}
+        <div className={`absolute inset-0 ${selectedCountry.image ? 'bg-black bg-opacity-75' : 'bg-gray-50'}`}></div>
+
+        {/* Content */}
+        <div className="relative z-10">
+          {/* Header */}
+          <div className={`${selectedCountry.image ? 'bg-black bg-opacity-80 backdrop-blur-md border-b-2 border-white border-opacity-20' : `bg-gradient-to-r ${selectedCountry.color}`} shadow-lg`}>
+            <div className="max-w-5xl mx-auto px-8 py-6">
+              <button
+                onClick={() => setCurrentView('dashboard')}
+                className={`flex items-center gap-2 ${selectedCountry.image ? 'text-white hover:text-gray-200' : 'text-gray-800 hover:text-gray-900'} mb-4 transition`}
+              >
+                <Home size={20} />
+                <span>Back to Dashboard</span>
+              </button>
+              <div className="flex items-center gap-6">
+                <span className="text-8xl drop-shadow-2xl">{selectedCountry.flag}</span>
+                <div>
+                  <h1 className={`text-4xl font-bold ${selectedCountry.image ? 'text-white' : 'text-gray-900'}`}>{selectedCountry.name}</h1>
+                  <p className={`text-xl italic mt-2 ${selectedCountry.image ? 'text-gray-200' : 'text-gray-800'}`}>{selectedCountry.tagline}</p>
+                  <p className={`text-sm mt-1 ${selectedCountry.image ? 'text-gray-300' : 'text-gray-700'}`}>Authors: {selectedCountry.authors}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
         <div className="max-w-5xl mx-auto px-8 py-8 space-y-6">
           {/* Situation */}
@@ -2064,13 +2081,13 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
           </Section>
 
           {/* Advice to Minister */}
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-lg p-8 border-2 border-purple-200">
+          <div className="bg-gradient-to-br from-purple-900 to-pink-900 bg-opacity-90 backdrop-blur-md rounded-xl shadow-2xl p-8 border-2 border-purple-400 border-opacity-30">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-4xl">💡</span>
-              <h2 className="text-3xl font-bold text-gray-900">Advice to the Minister</h2>
+              <h2 className="text-3xl font-bold text-white">Advice to the Minister</h2>
             </div>
-            
-            <p className="text-gray-700 mb-6">
+
+            <p className="text-gray-200 mb-6">
               If you could go back in time and advise the minister before implementing this reform, 
               what would you say? Our AI will generate a counterfactual narrative exploring what might 
               have happened if your advice had been followed.
@@ -2099,20 +2116,20 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
 
             {/* Socratic Questions */}
             {socraticQuestions.length > 0 && (
-              <div className="mb-6 bg-indigo-50 border-l-4 border-indigo-500 rounded-lg p-5">
-                <h3 className="font-bold text-indigo-900 mb-3 flex items-center gap-2">
+              <div className="mb-6 bg-indigo-900 bg-opacity-50 border-l-4 border-indigo-400 rounded-lg p-5 backdrop-blur-sm">
+                <h3 className="font-bold text-indigo-200 mb-3 flex items-center gap-2">
                   <span>💭</span>
                   Questions to Guide Your Thinking
                 </h3>
                 <ul className="space-y-3">
                   {socraticQuestions.map((q, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-indigo-600 font-bold mt-1">{i + 1}.</span>
-                      <span className="text-gray-800">{q}</span>
+                      <span className="text-indigo-300 font-bold mt-1">{i + 1}.</span>
+                      <span className="text-gray-200">{q}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-sm text-indigo-700 mt-4 italic">
+                <p className="text-sm text-indigo-300 mt-4 italic">
                   Reflect on these questions, then write your advice below.
                 </p>
               </div>
@@ -2122,7 +2139,7 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
               value={advice}
               onChange={(e) => setAdvice(e.target.value)}
               placeholder="If I could go back, I'd advise the minister to..."
-              className="w-full h-32 p-4 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 resize-none"
+              className="w-full h-32 p-4 bg-white bg-opacity-90 border border-purple-400 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400 resize-none text-gray-900 placeholder-gray-500"
             />
 
             <button
@@ -2144,7 +2161,7 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
             </button>
 
             {counterfactual && (
-              <div className="mt-6 bg-white rounded-lg p-6 border-2 border-purple-300">
+              <div className="mt-6 bg-white bg-opacity-90 backdrop-blur-md rounded-lg p-6 border-2 border-purple-400">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <span>🔮</span>
                   Alternative Timeline
@@ -2170,12 +2187,13 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
                 a.download = `${selectedCountry.name}-reform-summary.txt`;
                 a.click();
               }}
-              className="flex items-center gap-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+              className="flex items-center gap-2 bg-white bg-opacity-90 backdrop-blur-md text-gray-900 px-6 py-3 rounded-lg hover:bg-opacity-100 transition shadow-lg font-medium"
             >
               <Download size={20} />
               Download Summary
             </button>
           </div>
+        </div>
         </div>
       </div>
     );
@@ -2184,19 +2202,19 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
 
 function Section({ title, icon, expanded, onToggle, children }) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white bg-opacity-95 backdrop-blur-md rounded-lg shadow-xl overflow-hidden border border-white border-opacity-20">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-6 hover:bg-gray-50 transition"
+        className="w-full flex items-center justify-between p-6 hover:bg-gray-50 hover:bg-opacity-50 transition"
       >
         <div className="flex items-center gap-3">
           <span className="text-3xl">{icon}</span>
           <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
         </div>
-        {expanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+        {expanded ? <ChevronUp size={24} className="text-gray-700" /> : <ChevronDown size={24} className="text-gray-700" />}
       </button>
       {expanded && (
-        <div className="p-6 pt-0 border-t">
+        <div className="p-6 pt-0 border-t border-gray-200">
           {children}
         </div>
       )}
