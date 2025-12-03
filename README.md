@@ -4,7 +4,7 @@ An interactive dashboard summarizing education reforms featured in Fernando Reim
 
 ## Features
 
-- **8 Country Profiles**: Brazil, Finland, Japan, Mexico, Peru, Poland, Portugal, and Russia (7 available)
+- **8 Country Profiles**: Brazil, Finland, Japan, Mexico, Peru, Poland, Portugal, and Russia (all available)
 - **Comprehensive Reform Data**: Each country includes situation, indicators, challenges, political context, ministers, reform goals, strategies, and results
 - **Country Comparison**: Compare any two countries side-by-side
 - **AI-Powered "Advice to the Minister"**:
@@ -22,8 +22,7 @@ An interactive dashboard summarizing education reforms featured in Fernando Reim
 ✅ **Peru** - A wholesale reform fueled by obsession with learning and equity
 ✅ **Poland** - Post-communist transformation and the reversal of evidence-based reform
 ✅ **Portugal** - From last place to above OECD average through curriculum quality and assessment
-
-🔜 Russia (Coming soon)
+✅ **Russia** - From Soviet "best-in-the-world" to globally competitive through competency-based standards
 
 ## Getting Started
 
@@ -97,14 +96,18 @@ A801 Automation/
 - See side-by-side comparisons of situation, indicators, challenges, goals, and results
 - Click "View Full Profile" buttons to dive deeper into either country
 
-## Adding More Countries
+## Data Structure
 
-To add Russia:
-
-1. Open [src/App.jsx](src/App.jsx)
-2. Find the country object (e.g., `russia: { id: 'russia', ... }`)
-3. Add the chapter data following the same structure as Brazil, Finland, Japan, Mexico, Peru, Poland, or Portugal
-4. Change `available: false` to `available: true`
+All country data is stored in the `reformData` object in [src/App.jsx](src/App.jsx). Each country follows a consistent structure with fields for:
+- Basic info (id, name, flag, tagline, authors, color)
+- Situation overview
+- 8 key indicators
+- Reform challenges
+- Political context
+- Ministers and key actors
+- Reform goals
+- Strategies implemented
+- Results achieved
 
 ## AI Integration
 
@@ -129,7 +132,7 @@ All content is derived from *Audacious Education Purposes: How Governments Trans
 - Peru: Jaime Saavedra & Marcela Gutierrez
 - Poland: Jerzy Wiśniewski
 - Portugal: Nuno Crato
-- Russia: Igor Remorenko
+- Russia: Isak Froumin & Igor Remorenko
 
 ## License
 

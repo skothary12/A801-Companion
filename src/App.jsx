@@ -1235,7 +1235,186 @@ Poland's education reform story is both inspiring and cautionary: inspiring beca
 
 Portugal's transformation from PISA 2000 (below average, near bottom) to PISA 2015 (above OECD average, model for others) demonstrates dramatic improvement through evidence-based policy, clear curriculum, reliable assessment, teacher partnership, focus on excellence and equity, and sustained attention to quality. Proved demanding education promotes rather than harms disadvantaged students, and political will with professional commitment can overcome severe financial constraints.`
   },
-  russia: { id: 'russia', name: 'Russia', flag: '🇷🇺', tagline: 'Modernizing the system', available: false, color: 'from-blue-400 to-red-400' }
+  russia: {
+    id: 'russia',
+    name: 'Russia',
+    flag: '🇷🇺',
+    tagline: 'From Soviet "best-in-the-world" to globally competitive through competency-based standards',
+    authors: 'Isak Froumin and Igor Remorenko',
+    available: true,
+    color: 'from-blue-400 to-red-400',
+    situation: `Russia transformed from the Soviet belief in having the "best-in-the-world" school system to a modern, globally competitive education system over a quarter century (1991-2018). The journey involved four major stages: (1) 1991 - disappearance of Soviet control and experimentation period; (2) 2000 - establishment of institutional mechanisms for reform; (3) 2012 - focus on global competitiveness and 21st-century skills; (4) 2016 - conservative turn questioning competency-based approaches.
+
+The Soviet legacy included forced equalization, communist ideological education, but also innovative curriculum development in the 1920s (influenced by Dewey, Vygotsky) and activity-based approaches in the 1960s. The late 1980s-1990s saw an innovation movement that encouraged experimentation, though this led to fragmentation.
+
+The 2001 "Concept for Modernizing Russian Education through 2010" introduced competency-based approaches. By 2009-2010, new Federal Education Standards (FES) were developed with three outcome groups: subject knowledge, meta-subject skills (critical thinking, problem-solving), and personal development. PISA results improved dramatically from below OECD average in 2000 to surpassing OECD average for the first time in 2015.
+
+However, 2016-2018 saw a conservative turn with new ministry leadership questioning the competency-based paradigm and emphasizing knowledge-centered education, creating ongoing tensions in the system.`,
+    indicators: [
+      { label: 'PISA 2000 Reading', value: 'Below OECD avg', icon: '📉' },
+      { label: 'PISA 2015 Reading', value: 'Above OECD avg', icon: '📈' },
+      { label: 'Reform Period', value: '1991-2018', icon: '📅' },
+      { label: 'Major Stages', value: '4 transitions', icon: '🔄' },
+      { label: 'FES Outcomes', value: '3 groups', icon: '🎯' },
+      { label: 'Soviet Legacy', value: 'Mixed impact', icon: '🏛️' },
+      { label: 'Implementation', value: 'Partial success', icon: '⚖️' },
+      { label: 'Current Status', value: 'Paradigm debate', icon: '🤔' }
+    ],
+    challenges: [
+      'Historical legacy: deeply rooted belief in Soviet school system as "best-in-the-world"',
+      'Soviet period forced equalization masked genuine excellence and innovation',
+      'Communist ideological education created resistance to new pedagogical approaches',
+      'Late 1980s-1990s experimentation period led to fragmentation and lack of coherence',
+      'Tension between innovation movement and need for national standards',
+      'Cultural resistance to competency-based education from conservative educators',
+      'Gap between policy intentions and classroom implementation',
+      'Teachers lacked training in new pedagogical approaches (critical thinking, problem-solving)',
+      'Textbook industry slow to adapt to new standards and competencies',
+      'Assessment system misaligned with competency-based goals',
+      'Regional variation in implementation capacity and commitment',
+      'Public confusion about educational goals and quality indicators',
+      'Political interference in educational policy and curriculum content',
+      '2016 conservative turn created uncertainty and reversed some reforms',
+      'Debate between knowledge-centered vs. competency-based paradigms',
+      'Insufficient resources for professional development at scale',
+      'Limited mechanisms for learning from pilot programs and innovations',
+      'Weak accountability for student learning outcomes',
+      'Pressure to show rapid results conflicted with deep systemic change',
+      'Balancing global competitiveness with national cultural identity',
+      'Economic instability affected sustained investment in education',
+      'Teacher unions and professional associations resisted some changes',
+      'Lack of consensus on what "21st-century skills" meant in practice'
+    ],
+    context: `Russia's education reform must be understood within the context of post-Soviet transformation and the country's search for a new identity. The quarter-century journey (1991-2018) reflects broader societal transitions.
+
+**Soviet Legacy (pre-1991):**
+The Soviet system created a deeply rooted belief in Russian educational superiority. While forced equalization suppressed genuine excellence, the system had innovative periods - the 1920s saw influence from Dewey and contributions from Vygotsky, and the 1960s developed activity-based approaches.
+
+**Stage 1: 1991 - Experimentation (1991-2000):**
+The disappearance of Soviet control led to an innovation movement starting in the late 1980s. Teachers and schools experimented with new approaches, curriculum, and pedagogy. However, this freedom led to fragmentation without clear national direction.
+
+**Stage 2: 2000 - Institutional Mechanisms (2000-2011):**
+2001: "Concept for Modernizing Russian Education through 2010" introduced competency-based approach
+2004: New state education standards approved
+2005-2011: Project approach with competitive grants to best teachers and innovative schools
+2007: Presidential call for new educational model addressing innovative economy needs
+
+**Stage 3: 2012 - Global Competitiveness (2012-2015):**
+2009-2010: New Federal Education Standards (FES) drafted with three outcome groups
+Implementation of competency-based curriculum and assessment
+Focus on 21st-century skills and international benchmarking
+PISA 2015: First time surpassing OECD average across all domains
+
+**Stage 4: 2016 - Conservative Turn (2016-2018):**
+New ministry leadership questioned competency-based approaches
+Emphasis shifted back to knowledge-centered education
+Created tension between reform-oriented educators and traditionalists
+Ongoing debate about direction of Russian education`,
+    minister: `The reform period involved multiple ministers and key actors across four stages:
+
+**Early Post-Soviet Period (1991-2000):**
+Various ministers presided over experimentation phase with limited central control. Innovation movement led by reformist educators and school directors.
+
+**Institutional Building Period (2000-2011):**
+Ministers implemented the 2001 "Concept for Modernizing Russian Education through 2010" introducing competency-based approaches. 2007: President Vladimir Putin called for new educational model to address innovative economy needs.
+
+**Global Competitiveness Period (2012-2015):**
+**Igor Remorenko** - Deputy Minister of Education (2011-2013), co-author of this chapter, directly involved in implementing competency-based reforms and new Federal Education Standards.
+
+**Isak Froumin** - Academic leader (not minister but key influencer), World Bank team member 1999-2015, co-author of this chapter, helped bring international perspectives and PISA benchmarking to Russian reforms.
+
+**Conservative Turn Period (2016-2018):**
+New ministry leadership reorganized the ministry and questioned the competency-based paradigm, shifting emphasis back to knowledge-centered education and traditional approaches.
+
+The reform narrative reflects ongoing tension between internationalist, competency-focused reformers (like Froumin and Remorenko) and nationalist, knowledge-centered conservatives in the ministry.`,
+    goals: [
+      'Transform from Soviet "best-in-the-world" belief to evidence-based, globally competitive system',
+      'Move from knowledge transmission to competency-based education',
+      'Develop 21st-century skills: critical thinking, problem-solving, collaboration',
+      'Improve PISA performance from below to above OECD average',
+      'Create coherent national standards while allowing innovation',
+      'Implement Federal Education Standards (FES) with three outcome groups',
+      'Develop meta-subject competencies across all curriculum areas',
+      'Balance subject knowledge with personal development outcomes',
+      'Modernize pedagogy from lecture-based to activity-based learning',
+      'Align assessment with competency-based goals',
+      'Build teacher capacity for new pedagogical approaches',
+      'Create incentive systems for innovative teachers and schools',
+      'Develop textbooks and materials aligned with new standards',
+      'Establish mechanisms for learning from international best practices',
+      'Maintain equity while promoting excellence',
+      'Connect education to economic development and innovation economy',
+      'Engage public in understanding and supporting educational quality',
+      'Build professional autonomy while ensuring accountability'
+    ],
+    strategies: [
+      '**2001-2004: Design and Discussion Phase:**',
+      '• 2001: Published "Concept for Modernizing Russian Education through 2010" introducing competency-based approach',
+      '• 2004: Approved new state education standards',
+      '• Engaged educators, academics, and international experts in standards development',
+      '',
+      '**2005-2011: Project Approach:**',
+      '• Competitive grants to best teachers (financial rewards for excellence)',
+      '• Grants to innovative schools to pilot new approaches',
+      '• Encouraged experimentation and learning from successful practices',
+      '• Built professional networks of reform-oriented educators',
+      '',
+      '**2007-2010: New Standards Development:**',
+      '• 2007: Presidential call for new educational model addressing innovative economy',
+      '• 2008: Inclusion of "meta-discipline learning outcomes" in standards framework',
+      '• 2009-2010: New Federal Education Standards (FES) drafted collaboratively',
+      '• Three outcome groups: (1) subject knowledge, (2) meta-subject skills (critical thinking, problem-solving, communication), (3) personal development (values, motivation, self-regulation)',
+      '',
+      '**Implementation Strategies:**',
+      '• Pilot testing of new standards in selected schools',
+      '• Professional development programs for teachers in competency-based pedagogy',
+      '• Development of new textbooks and instructional materials aligned with FES',
+      '• Public discussions and consultations on standards and curriculum',
+      '• International benchmarking through PISA and other assessments',
+      '• Creation of assessment tools for meta-subject competencies',
+      '',
+      '**Soviet Legacy and Innovation Movement (1920s-1990s):**',
+      '• 1920s: Innovative curriculum influenced by Dewey, contributions from Vygotsky',
+      '• 1960s: Development of activity-based approaches',
+      '• Late 1980s-1990s: Innovation movement encouraging experimentation',
+      '• Mixed legacy: innovative pedagogy coexisted with forced equalization and ideological control',
+      '',
+      '**Tensions and Adjustments:**',
+      '• Ongoing debate between competency-based and knowledge-centered approaches',
+      '• 2016-2018: Conservative turn questioned competency paradigm',
+      '• Emphasis shifted back to traditional knowledge and subject mastery',
+      '• Reflects broader societal tensions about educational direction'
+    ],
+    results: `**PISA Transformation:**
+Russia's PISA performance improved dramatically from 2000 to 2015. In PISA 2000, Russia scored below OECD average across all domains. By PISA 2015, Russia surpassed OECD average for the first time in reading, mathematics, and science - a remarkable achievement demonstrating the impact of sustained reform efforts.
+
+**Standards Implementation:**
+The Federal Education Standards (FES) with three outcome groups (subject, meta-subject, personal) were successfully drafted and formally adopted. However, implementation in classrooms was partial and uneven. While some innovative schools embraced the competency-based approach, many traditional schools struggled to move beyond knowledge transmission.
+
+**Teacher and School Innovation:**
+The 2005-2011 project approach with competitive grants successfully identified and rewarded excellent teachers and innovative schools. This created networks of reform-oriented educators and demonstrated what was possible. However, these innovations did not scale system-wide due to limited capacity-building mechanisms.
+
+**Pedagogical Shifts:**
+Some progress in moving from lecture-based to activity-based learning, particularly in schools that participated in pilot programs. Development of new textbooks and materials aligned with competency goals, though quality and alignment varied. Teacher training in new pedagogical approaches reached limited numbers and depth varied significantly.
+
+**Assessment Challenges:**
+Gap remained between competency-based curriculum goals and traditional assessment practices. Development of assessment tools for meta-subject competencies proved difficult. Many teachers continued to assess primarily subject knowledge rather than broader competencies.
+
+**Political and Cultural Tensions:**
+The 2016-2018 conservative turn revealed deep cultural resistance to competency-based education. New ministry leadership questioned whether Russia should follow international trends or develop its own model. Shift back toward knowledge-centered education created uncertainty and confusion in schools.
+
+**Mixed Legacy:**
+Russia's quarter-century journey demonstrates both the possibility and difficulty of fundamental educational transformation. PISA improvements show that system-level change is possible. However, the conservative turn illustrates how political and cultural factors can reverse or redirect reforms.
+
+**Ongoing Debates:**
+Current Russian education remains contested terrain between:
+• Competency-based vs. knowledge-centered paradigms
+• International benchmarking vs. national cultural identity
+• Innovation vs. tradition
+• Professional autonomy vs. centralized control
+
+The chapter concludes that Russia's experience offers important lessons about sustaining educational reform through political transitions and balancing global competitiveness with national values.`
+  }
 };
 
 export default function EducationReformDashboard() {
