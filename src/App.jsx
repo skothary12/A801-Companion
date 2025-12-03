@@ -1575,7 +1575,7 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
 
   if (currentView === 'dashboard') {
     return (
-      <div className="min-h-screen bg-black p-8">
+      <div className="min-h-screen bg-slate-900 p-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
