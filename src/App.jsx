@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { Home, ChevronDown, ChevronUp, Send, Loader2, Download } from 'lucide-react';
 
+// Import country cover images
+import brazilImg from './assets/images/Brazil.jpg';
+import finlandImg from './assets/images/Finland.jpg';
+import japanImg from './assets/images/Japan.jpg';
+import mexicoImg from './assets/images/Mexico.jpg';
+import peruImg from './assets/images/Peru.jpg';
+import polandImg from './assets/images/Poland.jpg';
+import portugalImg from './assets/images/Portugal.jpg';
+
 const reformData = {
   brazil: {
     id: 'brazil',
@@ -10,6 +19,7 @@ const reformData = {
     authors: 'Claudia Costin & Teresa Pontual',
     available: true,
     color: 'from-green-400 to-yellow-400',
+    image: brazilImg,
     
     situation: `Brazil faced significant educational challenges despite constitutional guarantees of universal education and high spending. In 2015, Brazil ranked 64th in mathematics, 62nd in science, and 61st in reading among 69 countries in PISA. Despite being the world's ninth largest economy and spending 6.2% of GDP on education (more than the OECD average of 5.2%), student outcomes were poor. Only 43% of students learned what they should in Math and 55% in Portuguese by end of fifth grade (2015). These percentages worsened at higher grades: 18% in Math and 34% in Portuguese in ninth grade, and only 7% in Math and 28% in Portuguese at the last year of high school. Only 59.2% of 19-year-olds had graduated high school in 2017. The education system was highly decentralized, with 5,570 municipalities, 26 states, and a federal district all managing different aspects of education for 48.5 million children (81% in public schools).`,
     
@@ -104,6 +114,7 @@ const reformData = {
     authors: 'Jari Lavonen',
     available: true,
     color: 'from-blue-400 to-white',
+    image: finlandImg,
     
     situation: `Finland had an internationally recognized high-performing education system that successfully combined high quality with widespread equity and social cohesion. International interest began in 2002 when PISA results showed Finnish 15-year-olds ranked high in reading, science, and mathematics. Finnish students achieved high scores among OECD countries in 2000, 2003, 2006, and 2009, with both high scores and low variation in performance. Finland was ranked second in the world for the impact a nation's education system has on stabilizing its economy and developing its social environment. Success was explained by collaborative education policy implementation, a decentralized system with high teacher autonomy, and professional teachers educated in 5-year university master's programs (required for 45+ years). However, PISA 2012 and 2015 showed declining learning outcomes, and TALIS 2013 demonstrated weaknesses in school operations and teacher activities. Policymakers argued the system was no longer adequately promoting 21st century competences or preparing students for the future.`,
     
@@ -219,6 +230,7 @@ The reforms demonstrated how Finland leveraged its decentralized system and teac
     authors: 'Shinichi Yamanaka & Kan Hiroshi Suzuki',
     available: true,
     color: 'from-red-400 to-white',
+    image: japanImg,
     
     situation: `In the 1980s, Japan's education system faced serious problems: children's bullying, school violence, truancy, psychological and physical pressure from excessively competitive entrance examinations, and schools' inaction regarding problematic teachers. Japan had achieved dramatic economic growth after WWII, reaching the world's 2nd highest GNP by 1968 through mass production and consumption. However, by the 1980s, society suffered side effects of wealth including environmental problems, disintegration of family units and communities due to urbanization, and weakened traditional values. The education system was characterized by standardized "cramming-style" rote learning focused on university entrance examinations, which created fierce competition starting in early teens. School record-oriented employment favored alumni of elite universities, making entrance exam competition extremely intense. The system successfully taught Western science and technology but stifled creativity, individuality, and independent thinking needed for 21st century. Japan transitioned from following Western models to setting its own goals without a model, requiring fundamental changes in education approach.`,
     
@@ -361,6 +373,7 @@ Japan's 40-year reform demonstrated that transforming from 20th to 21st century 
     authors: 'Elisa Bonilla-Rius',
     available: true,
     color: 'from-green-400 to-red-400',
+    image: mexicoImg,
     
     situation: `Mexico's education system in 2012 was the world's 9th largest with 36.4 million students, 2 million teachers, and 260,000 schools, but performed poorly despite its scale. On PISA 2012, Mexico ranked 53rd out of 65 countries. On national tests (PLANEA 2017), 64% of 9th graders scored at the lowest level in Mathematics and 34% in Spanish, meaning most left school unable to comprehend complex texts or apply algebraic skills. The system was highly vertical and centralized despite 1992 decentralization to 32 states. Over decades, the powerful National Teachers' Union (SNTE, 1.6M members) had effectively established shared governance with the state, leading to severe corruption: teaching positions were sold ($5,000-$30,000), rented, or inherited rather than allocated by merit. A 2012 census revealed 298,000 "phantom teachers" (13% of payroll) not showing up for work but being paid. The union controlled hiring and promotions through cronyism rather than competence. Major inequalities existed: rural students scored 55 points below urban students in Spanish; children of illiterate parents scored 161 points below those with university-educated parents. The system was characterized by dated practices, lack of transparency, chronic teacher absenteeism, overloaded curriculum with superficial coverage, and predominant lecturing with little student interaction.`,
     
@@ -556,6 +569,7 @@ Mexico's reform demonstrated that breaking corruption and union control is possi
     authors: 'Jaime Saavedra & Marcela Gutierrez',
     available: true,
     color: 'from-red-400 to-white',
+    image: peruImg,
 
     situation: `After decades of expansion, Peru's education system had relatively high enrollment levels but suffered from extremely low and heterogeneous quality. By 2013, Peru faced a profound learning crisis: the country ranked last (65th out of 65) in PISA 2012 results. Despite being a growing middle-income country with net enrollment rates close to 100% at primary level and 80% at secondary level, student learning outcomes were dismal. Peru had implemented first-generation economic reforms since the 1990s that fostered economic growth, but these did not include structural reforms promoting equality of opportunity. Educational opportunities had expanded massively since the 1970s, but quality was low and highly heterogeneous across regions, socioeconomic groups, and ethnicities. Since 2003, Peru had a national standardized exam for all 2nd grade classrooms showing learning rates were consistently low and relatively flat. The PISA 2012 results showing Peru in last place created a national "PISA shock" - education appeared on the front page of newspapers (which never happened). The government chose to "own the problem" and use the results to declare "We're not in trouble. We're in deep trouble." This shock catalyzed a comprehensive reform focused obsessively on improving learning and equity. School infrastructure was in very poor condition, textbooks were insufficient and arrived late, there were supply shortages, and almost all current expenditures went to teacher salaries. The public perceived teachers as uncommitted unionized public servants who cared only about job security, not student learning, though many teachers had intrinsic motivation despite low salaries and poor conditions.`,
 
@@ -818,6 +832,7 @@ Peru's reform demonstrates how a profound national crisis (PISA shock) combined 
     authors: 'Jerzy Wiśniewski & Marta Zahorska',
     available: true,
     color: 'from-red-400 to-white',
+    image: polandImg,
 
     situation: `Poland underwent a dramatic post-communist transformation beginning in 1989 with the Solidarity movement and Round Table negotiations that ended communist rule. Ten years after this political breakthrough, Poland launched an ambitious education reform in 1999 that fundamentally restructured the school system. The reform reduced primary school from 8 to 6 years, created a new 3-year lower secondary school (gimnazjum), and extended general education by 1 year before students were tracked into vocational or general tracks. This postponement of tracking was designed to provide more equal opportunities and better prepare students for a knowledge economy. The reform was implemented rapidly - designed in 1998, legislated in 1999, and implemented September 1999. Initial years were marked by significant anxiety among teachers and local authorities about capacity to implement the changes. However, the reform produced remarkable results: Poland's PISA scores improved dramatically from 2000 to 2012 (Reading: 479→518, Math: 490→518, Science: 498→526), making Poland one of the top-performing education systems in the world. Despite this evidence-based success, the reform became politically contested. In 2015, a new government was elected on a platform of nostalgia, promising to restore the pre-1999 system and eliminate lower secondary schools. This led to a 2017 "counter-reform" that reversed the successful structural changes despite all evidence showing they worked. The reversal created chaos in schools, culminated in a massive 2019 teachers' strike with 80% school participation, and vindicated the original reform when PISA 2018 results (collected before reversal implementation) showed continued improvement.`,
 
@@ -1045,6 +1060,7 @@ Poland's education reform story is both inspiring and cautionary: inspiring beca
     authors: 'Nuno Crato',
     available: true,
     color: 'from-green-400 to-red-400',
+    image: portugalImg,
 
     situation: `Portugal arrived late to the twentieth century, struggling with illiteracy, poverty, isolation, and a very limited school system. Only in 1956 was compulsory schooling extended from 3 to 4 years (boys only; girls in 1960). By 1970, four years before the democratic revolution, 18% of the population was still illiterate, 66% of 15-year-olds hadn't completed any level of formal education, and only 0.9% had higher education degrees. Following the 1974 democratic revolution, European Community entrance, and arrival of structural funds, schooling expanded dramatically. By 2001, illiteracy dropped to 9%, the percentage without formal education fell to 9.2%, and those with higher education rose to 8.4%. These quantitative successes (democratization, expansion, increased compulsory schooling) apparently failed to bring students to reasonable literacy and general education levels. A bitter debate divided the country between educationalists defending the system and intellectuals accusing politicians of degrading education and lowering standards. Shocking news came with TIMSS 1995 showing Portuguese 4th graders at the bottom (only Iran and Iceland behind) and PISA 2000 showing Portugal below OECD average in all three areas. These results created a national crisis moment. From 2001-2015, despite many different ministers from different parties, a common thread emerged: increased attention to results. This culminated in the 2011-2015 period with explicit, intentional reforms focused on clear curriculum, increased school autonomy, regular student assessment, vocational paths, and flexibility. By PISA 2015, Portugal achieved above OECD average performance, and TIMSS showed 4th graders scoring higher in Mathematics than Finland and other high-performing countries.`,
 
@@ -1647,26 +1663,39 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
                 onClick={() => viewCountry(country.id)}
                 disabled={!country.available}
                 className={`group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 ${
-                  country.available 
-                    ? 'hover:shadow-2xl hover:scale-105 cursor-pointer' 
+                  country.available
+                    ? 'hover:shadow-2xl hover:scale-105 cursor-pointer'
                     : 'opacity-60 cursor-not-allowed'
                 }`}
               >
-                <div className={`bg-gradient-to-br ${country.color} p-8 h-64 flex flex-col items-center justify-center text-center`}>
-                  <div className="text-7xl mb-4 transform group-hover:scale-110 transition-transform">
-                    {country.flag}
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                    {country.name}
-                  </h2>
-                  <p className="text-sm text-gray-700 italic px-2">
-                    {country.tagline}
-                  </p>
-                  {!country.available && (
-                    <div className="mt-4 bg-gray-800 bg-opacity-50 text-white px-4 py-1 rounded-full text-xs">
-                      Coming Soon
+                <div
+                  className="relative p-8 h-64 flex flex-col items-center justify-center text-center"
+                  style={country.image ? {
+                    backgroundImage: `url(${country.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  } : {}}
+                >
+                  {/* Overlay for better text readability */}
+                  <div className={`absolute inset-0 ${country.image ? 'bg-black bg-opacity-40' : `bg-gradient-to-br ${country.color}`}`}></div>
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <div className="text-7xl mb-4 transform group-hover:scale-110 transition-transform drop-shadow-lg">
+                      {country.flag}
                     </div>
-                  )}
+                    <h2 className={`text-2xl font-bold mb-2 ${country.image ? 'text-white drop-shadow-lg' : 'text-gray-900'}`}>
+                      {country.name}
+                    </h2>
+                    <p className={`text-sm italic px-2 ${country.image ? 'text-white drop-shadow-md' : 'text-gray-700'}`}>
+                      {country.tagline}
+                    </p>
+                    {!country.available && (
+                      <div className="mt-4 bg-gray-800 bg-opacity-50 text-white px-4 py-1 rounded-full text-xs">
+                        Coming Soon
+                      </div>
+                    )}
+                  </div>
                 </div>
               </button>
             ))}
