@@ -1702,13 +1702,6 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
               </button>
             ))}
           </div>
-
-          <div className="mt-12 bg-white rounded-lg shadow p-6 text-center">
-            <p className="text-gray-600">
-              <span className="font-semibold text-green-600">Brazil</span>, <span className="font-semibold text-blue-600">Finland</span>, <span className="font-semibold text-red-600">Japan</span>, <span className="font-semibold text-orange-600">Mexico</span>, and <span className="font-semibold text-red-600">Peru</span> are ready to explore.
-              Poland, Portugal, and Russia will be added as their chapter data is provided.
-            </p>
-          </div>
         </div>
       </div>
     );
