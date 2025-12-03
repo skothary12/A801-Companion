@@ -1686,14 +1686,12 @@ Be realistic and nuanced - not overly optimistic or pessimistic.`
                     <div className="text-7xl mb-4 transform group-hover:scale-110 transition-transform drop-shadow-2xl">
                       {country.flag}
                     </div>
-                    <div className={`${country.image ? 'bg-black bg-opacity-60 backdrop-blur-sm' : ''} rounded-lg px-4 py-3`}>
-                      <h2 className={`text-2xl font-bold mb-2 ${country.image ? 'text-white' : 'text-gray-900'}`}>
-                        {country.name}
-                      </h2>
-                      <p className={`text-sm italic ${country.image ? 'text-gray-100' : 'text-gray-700'}`}>
-                        {country.tagline}
-                      </p>
-                    </div>
+                    <h2 className={`text-2xl font-bold mb-2 ${country.image ? 'text-white' : 'text-gray-900'}`} style={country.image ? {textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8)'} : {}}>
+                      {country.name}
+                    </h2>
+                    <p className={`text-sm italic px-2 ${country.image ? 'text-white font-semibold' : 'text-gray-700'}`} style={country.image ? {textShadow: '2px 2px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.7)'} : {}}>
+                      {country.tagline}
+                    </p>
                     {!country.available && (
                       <div className="mt-4 bg-gray-800 bg-opacity-70 backdrop-blur-sm text-white px-4 py-1 rounded-full text-xs">
                         Coming Soon
